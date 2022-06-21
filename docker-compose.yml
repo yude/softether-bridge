@@ -2,8 +2,8 @@ version: "3"
 
 services:
   softether-bridge:
-    image: sammrai/softether-bridge:latest
-    container_name: softether-bridge
+    image: ghcr.io/yude/softether-bridge:main
+    build: .
     environment:
       - USERNAME=vpnname
       - PASSWORD=vpnpassword
