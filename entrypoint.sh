@@ -31,7 +31,7 @@ done
 vpncmd_hub  ExtOptionSet DisableKernelModeSecureNAT /VALUE:1
 vpncmd_hub  ExtOptionSet DisableIpRawModeSecureNAT /VALUE:1
 vpncmd_hub  SecureNatEnable
-vpncmd_hub  CascadeCreate mycascade /SERVER:${VPN_SERVER} /HUB:DEFAULT /USERNAME:${USERNAME}
+vpncmd_hub  CascadeCreate mycascade /SERVER:${VPN_SERVER} /HUB:${HUB} /USERNAME:${USERNAME}
 vpncmd_hub  CascadePasswordSet mycascade /PASSWORD:${PASSWORD} /TYPE:standard
 vpncmd_hub  CascadeOnline mycascade
 vpncmd_hub  Cascadelist
